@@ -1,0 +1,77 @@
+{
+  "quizId": "heycys",
+  "brand": {
+    "name": "HeyCys",
+    "primaryColor": "#E41E73",
+    "accentColor": "#C0166F"
+  },
+  "title": "Walk yourself out of PCOS",
+  "description": "Answer a few questions and get your personalized PCOS wellness plan.",
+  "actions": ["Start The Quiz"],
+  "coverImage": "/images/heycys-cover.png",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "text": "What is your primary goal?",
+      "options": [
+        { "value": "lose-weight", "label": "Lose weight" },
+        { "value": "balance-hormones-and-mood", "label": "Balance hormones and mood" },
+        { "value": "gain-muscle", "label": "Gain muscle" },
+        { "value": "boost-energy", "label": "Boost energy" }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multi_choice",
+      "text": "What changes do you want to see?",
+      "options": [
+        { "value": "clearer-skin", "label": "Clearer skin", "icon": "/icons/personal-changes-icons/sparkles.svg" },
+        { "value": "fuller-hair", "label": "Fuller hair", "icon": "/icons/personal-changes-icons/woman.svg" },
+        { "value": "less-unwanted-hair", "label": "Less unwanted hair", "icon": "/icons/personal-changes-icons/razor.svg" },
+        { "value": "flatter-belly", "label": "Flatter belly", "icon": "/icons/personal-changes-icons/swim-suit.svg" },
+        { "value": "regular-periods", "label": "Regular periods", "icon": "/icons/personal-changes-icons/calendar.svg" }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "info",
+      "title": "Did you know?",
+      "description-1": "Walking can ease PCOS symptoms.",
+      "description-2": "Keep in mind that it only takes 15 minutes of walking each morning to give long-lasting results.",
+      "description-3": "Let’s continue with creating your personalized meal plan portfolio!",
+      "image": "/images/heycys-question.png"
+    },
+    {
+      "id": "q4",
+      "type": "single_choice",
+      "text": "Do you have any allergies?",
+      "options": [
+        { "value": "yes", "label": "Yes" },
+        { "value": "no", "label": "No" }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multi_choice",
+      "visibleIf": [{ "questionId": "q4", "equals": "yes" }],
+      "text": "What foods are you allergic to?",
+      "options": [
+        { "value": "lactose", "label": "Lactose", "icon": "/icons/food-icons/milk.svg" },
+        { "value": "eggs", "label": "Eggs", "icon": "/icons/food-icons/egg.svg" },
+        { "value": "nuts", "label": "Nuts", "icon": "/icons/food-icons/nutts.svg" },
+        { "value": "soy", "label": "Soy", "icon": "/icons/food-icons/seedling.svg" },
+        { "value": "gluten", "label": "Gluten", "icon": "/icons/food-icons/croissant.svg" },
+        { "value": "fish", "label": "Fish", "icon": "/icons/food-icons/fish.svg" },
+        { "value": "shellfish", "label": "Shellfish", "icon": "/icons/food-icons/crab.svg" },
+        { "value": "none", "label": "None of the above", "icon": "" }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "number",
+      "text": "How young are you?",
+      "validation": { "min": 18, "max": 100 }
+    }
+  ]
+}

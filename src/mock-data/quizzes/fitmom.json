@@ -1,0 +1,90 @@
+{
+  "quizId": "fitmom",
+  "brand": {
+    "name": "FitMom",
+    "primaryColor": "#AA00FF",
+    "accentColor": "#7928CA"
+  },
+  "title": "Get back in shape.",
+  "description": "A personalized fitness plan designed for moms at every stage.",
+  "actions": ["Start The Quiz"],
+  "coverImage": "/images/fitmom-cover.png",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "text": "What is your primary goal?",
+      "options": [
+        { "value": "lose-weight", "label": "Lose weight" },
+        { "value": "improve-specific-body-areas", "label": "Improve specific body areas" },
+        { "value": "gain-muscle", "label": "Gain muscle" },
+        { "value": "develop-healthy-habits", "label": "Develop healthy habits" }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multi_choice",
+      "text": "Select body areas you would like to improve:",
+      "visibleIf": [{ "questionId": "q1", "equals": "improve-specific-body-areas" }],
+      "options": [
+        { "value": "breast-form", "label": "Breast form", "icon": "/icons/body-areas-icons/breast.svg" },
+        { "value": "arms", "label": "Arms", "icon": "/icons/body-areas-icons/arms.svg" },
+        { "value": "belly", "label": "Belly", "icon": "/icons/body-areas-icons/belly.svg" },
+        { "value": "buttocks", "label": "Buttocks", "icon": "/icons/body-areas-icons/buttocks.svg" },
+        { "value": "legs-thighs", "label": "Legs and Thighs", "icon": "/icons/body-areas-icons/legs.svg" }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multi_choice",
+      "text": "Would you like to incorporate baby into your exercises?",
+      "options": [
+        { "value": "flexibility", "label": "Flexibility", "icon": "/icons/workouts-icons/cartwheeling.svg" },
+        { "value": "aerobic", "label": "Aerobic", "icon": "/icons/workouts-icons/running.svg" },
+        { "value": "strength", "label": "Strength", "icon": "/icons/workouts-icons/heavy-lifting.svg" },
+        { "value": "others", "label": "Others", "icon": "/icons/workouts-icons/swimming.svg" },
+        { "value": "no-workouts", "label": "I don’t like workouts", "icon": "/icons/workouts-icons/meditate.svg" }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "info",
+      "title": "Did you know?",
+      "description-1": "Low impact exercises are completely safe during breastfeeding and do not affect the milk supply or taste.",
+      "description-2": "Keep in mind that it only takes 15 minutes of focused daily physical activity to give long-lasting results.",
+      "description-3": "Let’s continue with creating your personalized meal plan portfolio!",
+      "image": "/images/fitmom-question.png"
+    },
+    {
+      "id": "q5",
+      "type": "single_choice",
+      "text": "Are you currently breastfeeding?",
+      "options": [
+        { "value": "yes", "label": "Yes" },
+        { "value": "no", "label": "No" }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "multi_choice",
+      "visibleIf": [{ "questionId": "q5", "equals": "yes" }],
+      "text": "What foods is your breasfed baby sensitive to?",
+      "options": [
+        { "value": "lactose", "label": "Lactose", "icon": "/icons/food-icons/milk.svg" },
+        { "value": "eggs", "label": "Eggs", "icon": "/icons/food-icons/egg.svg" },
+        { "value": "nuts", "label": "Nuts", "icon": "/icons/food-icons/nutts.svg" },
+        { "value": "soy", "label": "Soy", "icon": "/icons/food-icons/seedling.svg" },
+        { "value": "gluten", "label": "Gluten", "icon": "/icons/food-icons/croissant.svg" },
+        { "value": "fish", "label": "Fish", "icon": "/icons/food-icons/fish.svg" },
+        { "value": "shellfish", "label": "Shellfish", "icon": "/icons/food-icons/crab.svg" },
+        { "value": "none", "label": "None of the above", "icon": "" }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "number",
+      "text": "How young are you?",
+      "validation": { "min": 18, "max": 100 }
+    }
+  ]
+}
